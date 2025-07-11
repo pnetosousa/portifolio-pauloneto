@@ -60,13 +60,7 @@ Ele é usado como base para todas as páginas do portfólio.
                                 <button class="btn btn-sm btn-outline-success dropdown-toggle d-flex align-items-center" type="button"
                                     id="langDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                     style="font-family:'Share Tech Mono', monospace;">
-                                    @if(app()->getLocale() === 'pt')
-                                        <img src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/us.svg" alt="English"
-                                            width="24" height="16" class="mr-1">
-                                    @else
-                                        <img src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/br.svg" alt="Português"
-                                            width="24" height="16" class="mr-1">
-                                    @endif
+                                    <img src="{{ asset('img/language.svg') }}" alt="Mudar idioma" width="24" height="24" class="mr-1">
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="langDropdown">
                                     <a class="dropdown-item text-light d-flex align-items-center" href="{{ url('lang/pt') }}">

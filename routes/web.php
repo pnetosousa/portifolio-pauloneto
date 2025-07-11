@@ -1,11 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProjectsController;
-use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 
 Route::group(['middleware' => ['web', 'App\Http\Middleware\SetLocale']], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');

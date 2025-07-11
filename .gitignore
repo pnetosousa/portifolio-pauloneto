@@ -1,27 +1,57 @@
+# Laravel & PHP
 /vendor/
-/node_modules/
 /storage/
 /bootstrap/cache/
-.env
 *.log
-*.sqlite
-.DS_Store
-.env.backup
-.env.production
+*.bak
+*.tmp
+*.swp
+*.swo
 .phpactor.json
 .phpunit.result.cache
-/.fleet
-/.idea
-/.nova
 /.phpunit.cache
-/.vscode
+
+# Node & Frontend
+/node_modules/
+/public/build/
+/public/hot/
+/public/js/
+/public/css/
+/public/assets/
+/public/dist/
+/public/mix-manifest.json
+
+# Imagens e uploads
+/public/storage/
+/storage/app/public/
+
+# IDEs & Editor
+/.idea/
+/.vscode/
+/.history/
+/.fleet
+/.nova
 /.zed
+
+# Configuração & Ambiente
+.env
+.env.*
+.env.backup
+.env.production
 /auth.json
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
 Homestead.json
 Homestead.yaml
+
+# Banco de dados
+*.sqlite
+*.db
+/database/*.sqlite
+/database/*.db
+
+# Outros
+.DS_Store
 Thumbs.db
+
+# Testes & Coverage
+/coverage/
+/test-results/

@@ -12,9 +12,9 @@
                     <div class="d-flex flex-column align-items-center w-100 p-4">
                         <div class="card-header p-0 mb-3 bg-transparent border-0">
                             @lang('messages.Estamos há:')
-                            <span id="diasSemUpdate" class="dias-neon"></span>
+                            <span id="diasSemUpdate" class="dias-neon">0</span>
                             <span>@lang('messages.dias realizando updates com where.')<br>
-                                @lang('messages.Nosso recorde é') </span><span id="recordeDias" class="recorde-neon"></span>
+                                @lang('messages.Nosso recorde é') </span><span id="recordeDias" class="recorde-neon">0</span>
                             <span>@lang('messages.dias.')</span>
                         </div>
                     </div>
@@ -150,5 +150,5 @@
             </div>
         </div>
     </div>
-    <script src="/js/diasSemUpdate.js"></script>
+    <script src="{{ asset('js/diasSemUpdate.js') }}"></script>
 @endsection

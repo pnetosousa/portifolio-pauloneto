@@ -50,10 +50,22 @@ Ele é usado como base para todas as páginas do portfólio.
                                 @lang('messages.Sobre')
                             </a>
                         </li>
-                        <li class="nav-item {{ request()->routeIs('projetos') ? 'active' : '' }}">
-                            <a class="nav-link" href="{{ route('projetos') }}">
+                        <li class="nav-item {{ request()->routeIs('projetos') ? 'active' : '' }} dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" 
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 @lang('messages.Projetos')
                             </a>
+                            <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="projectsDropdown">
+                                <a class="dropdown-item text-light {{ request()->routeIs('projetos') ? 'active' : '' }}" 
+                                   href="{{ route('projetos') }}">
+                                    📋 @lang('messages.Projetos')
+                                </a>
+                                <div class="dropdown-divider" style="border-color: rgba(0, 255, 136, 0.3);"></div>
+                                <a class="dropdown-item text-light {{ request()->routeIs('easter-egg') ? 'active' : '' }}" 
+                                   href="{{ route('easter-egg') }}">
+                                    🥚 Easter Egg
+                                </a>
+                            </div>
                         </li>
                         <li class="nav-item d-flex align-items-center">
                             <div class="dropdown mr-3">

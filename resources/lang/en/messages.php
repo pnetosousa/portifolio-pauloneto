@@ -3,6 +3,7 @@ return [
     'Início' => 'Home',
     'Sobre' => 'About',
     'Projetos' => 'Projects',
+    'Easter Egg' => 'Easter Egg',
     'Formação' => 'Education',
     'Conhecimentos e atuações' => 'Skills & Experience',
     'Linguagens & Frameworks' => 'Languages & Frameworks',
@@ -94,6 +95,67 @@ return [
     'Plataforma SaaS com arquitetura distribuída em nuvem' => 'SaaS platform with distributed cloud architecture',
     'Consolidação contábil automatizada, gestão de demonstrações financeiras, análise de indicadores, integração ERP' => 'Automated accounting consolidation, financial statement management, indicator analysis, ERP integration',
     'Acessar Plataforma Analize' => 'Access Analize Platform',
+
+    // Easter Egg - Algorithms
+    'Easter Egg - Algoritmos de Ordenação' => 'Easter Egg - Sorting Algorithms',
+    'Visualize algoritmos de ordenação em ação!' => 'Visualize sorting algorithms in action!',
+    'Gerar Array' => 'Generate Array',
+    'Tamanho do Array:' => 'Array Size:',
+    'Velocidade:' => 'Speed:',
+    'Clique em "Gerar Array" para começar' => 'Click "Generate Array" to start',
+    'Sobre os Algoritmos' => 'About the Algorithms',
+    
+    // Bubble Sort
+    'Bubble Sort' => 'Bubble Sort',
+    'Bubble Sort Descrição' => 'Simple algorithm that compares adjacent elements and swaps them if they are in the wrong order.',
+    'Complexidade de Tempo:' => 'Time Complexity:',
+    'Complexidade de Espaço:' => 'Space Complexity:',
+    'Vantagens' => 'Advantages',
+    'Desvantagens' => 'Disadvantages',
+    'Bubble Vantagens' => [
+        'Simple to understand and implement',
+        'No additional memory required (in-place)',
+        'Stable algorithm',
+        'Works well for small arrays'
+    ],
+    'Bubble Desvantagens' => [
+        'Very slow for large arrays',
+        'O(n²) complexity in worst case',
+        'Makes many unnecessary comparisons',
+        'Not efficient in practice'
+    ],
+    
+    // Selection Sort
+    'Selection Sort' => 'Selection Sort',
+    'Selection Sort Descrição' => 'Repeatedly finds the smallest element and places it in the correct position.',
+    'Selection Vantagens' => [
+        'Simple to implement',
+        'No additional memory required',
+        'Minimum number of swaps (O(n))',
+        'Works well for small arrays'
+    ],
+    'Selection Desvantagens' => [
+        'Always O(n²) complexity',
+        'Not a stable algorithm',
+        'Doesn\'t adapt to partially sorted data',
+        'Poor performance for large arrays'
+    ],
+    
+    // Insertion Sort
+    'Insertion Sort' => 'Insertion Sort',
+    'Insertion Sort Descrição' => 'Builds the sorted list by inserting each element in the correct position.',
+    'Insertion Vantagens' => [
+        'Efficient for small arrays',
+        'Adapts well to sorted data (O(n))',
+        'Stable algorithm',
+        'Online sorting (can sort as it receives data)'
+    ],
+    'Insertion Desvantagens' => [
+        'O(n²) complexity in worst case',
+        'Inefficient for large arrays',
+        'More comparisons than Selection Sort',
+        'Performance depends on input'
+    ],
 
     // Footer
     'Todos os direitos reservados.' => 'All rights reserved.',

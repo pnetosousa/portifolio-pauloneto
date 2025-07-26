@@ -11,6 +11,12 @@ Route::group(['middleware' => ['web', 'App\Http\Middleware\SetLocale']], functio
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/sobre', [AboutController::class, 'index'])->name('about');
     Route::get('/projetos', [ProjectsController::class, 'index'])->name('projetos');
+    
+    // Easter Egg - Algoritmos de Ordenação
+    Route::get('/easter-egg', function () {
+        return view('easter-egg');
+    })->name('easter-egg');
+    
     Route::get('lang/{lang}', function ($lang) {
         if (in_array($lang, ['pt', 'en'])) {
             Session::put('locale', $lang);
